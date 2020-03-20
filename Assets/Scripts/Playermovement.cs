@@ -29,7 +29,7 @@ public class Playermovement : MonoBehaviour
         {
             Jump();
         }
-        rb.AddForce(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
 
     private void OnCollisionEnter(Collision col)
