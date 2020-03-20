@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     CharacterController controller;
     public bool wallCol;
 
-    void movement()
+    void MovementMethod()
     {
         if (controller.isGrounded)
         {
@@ -34,7 +34,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement();
+        MovementMethod();
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
