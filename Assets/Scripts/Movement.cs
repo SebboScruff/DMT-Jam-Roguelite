@@ -11,7 +11,7 @@ public class Movement : MonoBehaviour
     CharacterController controller;
     public bool wallCol;
 
-    void movement()
+    void MovementMethod()
     {
         if (controller.isGrounded)
         {
@@ -24,11 +24,6 @@ public class Movement : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
-    void Walljump()
-    {
- 
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +34,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement();
+        MovementMethod();
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -47,15 +42,13 @@ public class Movement : MonoBehaviour
          if(hit.normal.y< 0.1&& !controller.isGrounded)
         {
             wallCol = true;
+
             if (Input.GetKey(KeyCode.Space))
             {
                 moveDirection = hit.normal * speed;
                 moveDirection.y = jumpSpeed;
             }
-            else
-            {
-                wallCol = false;
-            }
+
         }
     }
 }
