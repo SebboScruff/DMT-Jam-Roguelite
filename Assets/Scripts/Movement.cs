@@ -24,11 +24,6 @@ public class Movement : MonoBehaviour
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
-    void Walljump()
-    {
- 
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -47,15 +42,13 @@ public class Movement : MonoBehaviour
          if(hit.normal.y< 0.1&& !controller.isGrounded)
         {
             wallCol = true;
+
             if (Input.GetKey(KeyCode.Space))
             {
                 moveDirection = hit.normal * speed;
                 moveDirection.y = jumpSpeed;
             }
-            else
-            {
-                wallCol = false;
-            }
+
         }
     }
 }
