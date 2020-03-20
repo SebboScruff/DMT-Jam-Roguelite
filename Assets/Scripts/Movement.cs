@@ -7,6 +7,7 @@ public class Movement : MonoBehaviour
     public float speed;
     public float jumpSpeed;
     public float gravity;
+    public float sliding;
     private Vector3 moveDirection;
     CharacterController controller;
     public bool wallCol;
@@ -21,14 +22,16 @@ public class Movement : MonoBehaviour
                 moveDirection.y = jumpSpeed;
             }
         }
-        moveDirection.y -= gravity * Time.deltaTime;
+        if (!wallCol)
+        {
+            moveDirection.y -= gravity * Time.deltaTime;
+        }
+        else if(wallCol)
+        {
+            moveDirection.y -= sliding * Time.deltaTime;
+        }
         controller.Move(moveDirection * Time.deltaTime);
     }
-    void Walljump()
-    {
- 
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +50,7 @@ public class Movement : MonoBehaviour
          if(hit.normal.y< 0.1&& !controller.isGrounded)
         {
             wallCol = true;
+
             if (Input.GetKey(KeyCode.Space))
             {
                 moveDirection = hit.normal * speed;
