@@ -10,11 +10,6 @@ public class Playermovement : MonoBehaviour
     private float forwardsBackwards;
     public bool isgrounded;
 
-    void Jump()
-    {
-        rb.AddForce(Vector3.up * jumpHight);
-    }
-
     // Start is called before the first frame update
     void Start()
     {
@@ -27,9 +22,10 @@ public class Playermovement : MonoBehaviour
         forwardsBackwards = Input.GetAxis("Horizontal");
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            Jump();
+            rb.AddForce(Vector3.up * jumpHight);
+            Debug.Log("JUMP");
         }
-        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+        transform.Translate(Vector3.right * speed * Time.deltaTime * forwardsBackwards);
     }
 
     private void OnCollisionEnter(Collision col)
