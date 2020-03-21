@@ -33,7 +33,6 @@ public class PlayerShooting : MonoBehaviour
         {
             float distance = difference.magnitude;
             Vector2 direction = difference / distance;
-            direction.Normalize();
             fireBullet(direction, rotationZ);
 
         }
