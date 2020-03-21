@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 1409025092843384193}
   - component: {fileID: 3247490516500721534}
   - component: {fileID: 5363723720967228455}
-  - component: {fileID: 8330132920218075283}
-  - component: {fileID: 8513904912423655647}
   - component: {fileID: 5532473480325059929}
+  - component: {fileID: 7952216431369611994}
   m_Layer: 0
   m_Name: TestBullet
   m_TagString: Untagged
@@ -29,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4865188340981231512}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -18.858, y: 7.7679935, z: -0.048789024}
-  m_LocalScale: {x: 0.19415706, y: 0.039034832, z: 0.15647732}
+  m_LocalPosition: {x: -18.858, y: 7.7538, z: -0.048789024}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -42,7 +41,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4865188340981231512}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &5363723720967228455
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -80,33 +79,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!136 &8330132920218075283
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4865188340981231512}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8513904912423655647
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4865188340981231512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b4d076d21333784cb71ac476f631c05, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  force: 50
 --- !u!54 &5532473480325059929
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -123,3 +95,16 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!135 &7952216431369611994
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4865188340981231512}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}

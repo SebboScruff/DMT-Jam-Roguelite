@@ -16,12 +16,12 @@ public class Movement : MonoBehaviour
     {
         if (controller.isGrounded)
         {
+            moveDirection.x = speed * Input.GetAxis("Horizontal");
             if (Input.GetKey(KeyCode.Space))
             {
                 moveDirection.y = jumpSpeed;
             }
         }
-        moveDirection.x = speed * Input.GetAxis("Horizontal");
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
@@ -52,6 +52,7 @@ public class Movement : MonoBehaviour
             {
                 moveDirection = hit.normal * speed;
                 moveDirection.y = jumpSpeed;
+                Flip();
             }
 
         }
