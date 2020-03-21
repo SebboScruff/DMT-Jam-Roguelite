@@ -16,7 +16,7 @@ public class levelgenerator : MonoBehaviour
     public float minX;
     public float maxX;
     public float minY;
-    private bool stopGen = false;
+    public bool stopGen = false;
 
     public LayerMask room;
 
