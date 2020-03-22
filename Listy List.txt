@@ -1,0 +1,19 @@
+
+Done
+- Proc Gen
+- Movement Shoot/ (Changed to Raycasting)
+- Jumping & Walljump Works, Can't Change Direction in the air
+- Music in motion
+- Model
+- Pause screen
+- Restart Screen
+- Start Screen
+
+In Progress
+- Ambience Levels
+- Animations Character
+- Enemies, Ground Patrol enemies, Fly Bastards
+- Score Based System with Hiscore
+- Health Bar/ UI
+- Health is the sun, Gets darker as the player gets damaged
+- Particles
