@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: [Ground, Wall]
+  tags:
+  - Ground
+  - Wall
+  - Music
   layers:
   - Default
   - TransparentFX

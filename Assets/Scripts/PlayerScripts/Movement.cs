@@ -10,6 +10,7 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection;
     CharacterController controller;
     public bool wallCol;
+    public bool faceingRight = true;
 
     void MovementMethod()
     {
@@ -35,6 +36,10 @@ public class Movement : MonoBehaviour
     void Update()
     {
         MovementMethod();
+        if ((Input.GetAxis("Horizontal") > 0 && !faceingRight) || (Input.GetAxis("Horizontal") < 0 && faceingRight))
+        {
+            Flip();
+        }
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -47,8 +52,15 @@ public class Movement : MonoBehaviour
             {
                 moveDirection = hit.normal * speed;
                 moveDirection.y = jumpSpeed;
+                Flip();
             }
 
         }
+    }
+    private void Flip()
+    {
+
+        faceingRight =!faceingRight;
+        transform.Rotate(0f, 180f, 0f);
     }
 }
