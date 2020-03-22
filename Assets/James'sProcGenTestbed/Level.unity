@@ -1261,10 +1261,10 @@ MonoBehaviour:
   - {fileID: 811304043}
   - {fileID: 1588999382}
   rooms:
-  - {fileID: 1837011340583321394, guid: d7d65ba9e6194f1419d3c4cadeead070, type: 3}
-  - {fileID: 1837011340583321394, guid: 06a464eb2716cc3498c54c646bd3fb68, type: 3}
-  - {fileID: 1837011340583321394, guid: 4f1f4d6c109f1644abf713144b23afe3, type: 3}
-  - {fileID: 1837011340583321394, guid: f2cb2e9dd1695954a93388104c118086, type: 3}
+  - {fileID: 8657862949741816753, guid: 2c7681e024553914eba200670ac66d9a, type: 3}
+  - {fileID: 4769401840582240478, guid: 768f646326ddb4f4da844c35c482bad3, type: 3}
+  - {fileID: 7211957021206035003, guid: aca76488d3291064aa29578ff18e93fc, type: 3}
+  - {fileID: 3314384375545494571, guid: 01e4417aaae42cf428857128b57a0114, type: 3}
   startTimeBetweenRoom: 0
   moveAmount: 10
   minX: -15
