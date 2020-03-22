@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.00.00">
+	<object class="ParameterPreset" id="{8f4c92bf-94b7-41a1-84ca-da2d4d159011}">
+		<property name="name">
+			<value>VapourMeter</value>
+		</property>
+		<relationship name="folder">
+			<destination>{564ccd9b-dad8-45d8-bc96-7ae915f63019}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{82ee7912-9ca2-426f-b4c7-de401bfcf8c6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{82ee7912-9ca2-426f-b4c7-de401bfcf8c6}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
