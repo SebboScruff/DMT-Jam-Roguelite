@@ -13,6 +13,7 @@ public class Pause : MonoBehaviour
     {
         isPaused = false;
         pauseCanvas.SetActive(false);
+        Time.timeScale = 1f;
     }
 
     // Update is called once per frame
