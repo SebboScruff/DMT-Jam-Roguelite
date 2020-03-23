@@ -18,42 +18,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0
   m_Center: {x: 0, y: 0.9, z: 0}
---- !u!114 &8093603079921813614
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2635754668617201857}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 672583966b42c1044aeb2e1aaad1e4e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  gravity: 20
-  wallCol: 0
-  faceingRight: 1
-  animator: {fileID: 8954650232222853032}
---- !u!143 &3830576526021755465
-CharacterController:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2635754668617201857}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Height: 2
-  m_Radius: 0.5
-  m_SlopeLimit: 90
-  m_StepOffset: 0.3
-  m_SkinWidth: 0.08
-  m_MinMoveDistance: 0
-  m_Center: {x: 0, y: 0.91, z: 0}
 --- !u!114 &4129524978230805594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -375,12 +339,6 @@ GameObject:
 --- !u!4 &1355386885401709266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3605627641189395241, guid: 52b69ca797d90854c99c1661f263df72,
-    type: 3}
-  m_PrefabInstance: {fileID: 2361731239292690939}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &8954650232222853032 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 6666384069912741459, guid: 52b69ca797d90854c99c1661f263df72,
     type: 3}
   m_PrefabInstance: {fileID: 2361731239292690939}
   m_PrefabAsset: {fileID: 0}
