@@ -1,9 +1,34 @@
 fileFormatVersion: 2
-guid: 3d2a2367e98c5d747974d3ea4eb02e7d
+guid: 3ea50d85165494f48ad40d522449e871
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: db3851c8057de6a4abe114ecacb42d4b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Surface1
+    second: {fileID: 2100000, guid: 0a82fe311326e3442bf8a71e9e8e21fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Surface2
+    second: {fileID: 2100000, guid: 0a82fe311326e3442bf8a71e9e8e21fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Surface3
+    second: {fileID: 2100000, guid: 0a82fe311326e3442bf8a71e9e8e21fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Surface4
+    second: {fileID: 2100000, guid: 0a82fe311326e3442bf8a71e9e8e21fe, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -43,9 +68,9 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
-    keepQuads: 0
+    keepQuads: 1
     weldVertices: 1
     preserveHierarchy: 0
     skinWeightsMode: 0
