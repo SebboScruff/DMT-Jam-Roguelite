@@ -12,6 +12,7 @@ public class PlayerShooting : MonoBehaviour
     public Vector3 pos;
     public float bulletSpeed;
     private Rect target;
+    public Pause pauseManager;
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +30,7 @@ public class PlayerShooting : MonoBehaviour
         Vector3 difference = pos - player.transform.position;
         float rotationZ = Mathf.Atan2(difference.y, difference.x) * Mathf.Rad2Deg;
         player.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && pauseManager.isPaused == false)
         {
             float distance = difference.magnitude;
             Vector2 direction = difference / distance;
