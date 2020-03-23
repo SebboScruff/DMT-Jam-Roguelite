@@ -12,16 +12,36 @@ public class Movement : MonoBehaviour
     public bool wallCol;
     public bool faceingRight = true;
 
+    //animation variables
+    public Animator animator;
+    
     void MovementMethod()
     {
         if (controller.isGrounded)
         {
             moveDirection.x = speed * Input.GetAxis("Horizontal");
-            if (Input.GetKey(KeyCode.Space))
+        if (moveDirection.x > 0 || moveDirection.x < 0)
+            {
+                animator.SetBool("is_running", true);
+            }
+            else
+            {
+                animator.SetBool("is_running", false);
+            }
+                   
+
+        if (Input.GetKey(KeyCode.Space))
             {
                 moveDirection.y = jumpSpeed;
+                //animation key
+                animator.SetBool("is_in_air", true);
+            }
+            else
+            {
+                animator.SetBool("is_in_air", false);
             }
         }
+       
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
@@ -29,7 +49,8 @@ public class Movement : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-
+        //Animation Start
+        animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -39,6 +60,7 @@ public class Movement : MonoBehaviour
         if ((Input.GetAxis("Horizontal") > 0 && !faceingRight) || (Input.GetAxis("Horizontal") < 0 && faceingRight))
         {
             Flip();
+
         }
     }
 
