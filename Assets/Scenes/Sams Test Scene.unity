@@ -424,24 +424,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1264846080}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1264846082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1264846081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 672583966b42c1044aeb2e1aaad1e4e0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 6
-  jumpSpeed: 8
-  gravity: 20
-  wallCol: 0
-  faceingRight: 1
-  animator: {fileID: 926666910}
 --- !u!143 &1264846083
 CharacterController:
   m_ObjectHideFlags: 0
