@@ -13,7 +13,7 @@ Material:
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: -1
   stringTagMap:
     MotionVector: User
@@ -111,10 +111,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_69C06717: 6
-    - Vector1_8E3CD0E: 28
-    - Vector1_F57107ED: 0.3
-    - Vector1_FD3DF246: 1.6
+    - Vector1_69C06717: 2
+    - Vector1_8E3CD0E: 29
+    - Vector1_F57107ED: 0.99
+    - Vector1_FD3DF246: 2.94
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -240,7 +240,7 @@ Material:
     - _ZTestModeDistortion: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_1996AE84: {r: 53.33666, g: 7.329233, b: 0.75476265, a: 1}
+    - Color_1996AE84: {r: 126.50718, g: 17.883213, b: 1.9870238, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
