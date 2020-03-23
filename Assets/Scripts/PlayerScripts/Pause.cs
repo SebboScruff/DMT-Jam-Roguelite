@@ -5,7 +5,7 @@ using UnityEngine;
 public class Pause : MonoBehaviour
 {
     public GameObject pauseCanvas;
-    public static bool isPaused;
+    public bool isPaused;
 
 
     // Start is called before the first frame update

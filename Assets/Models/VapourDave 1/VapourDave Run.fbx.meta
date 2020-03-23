@@ -1,12 +1,17 @@
 fileFormatVersion: 2
-guid: 6e5ba25f478daed49a377347a6e3bc16
+guid: 13695d9ac239b764d89fa83065fa3ed6
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable:
   - first:
       74: 1827226128182048838
-    second: Take 001
-  externalObjects: {}
+    second: Run
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Light
+    second: {fileID: 2100000, guid: 94120ba540876344eb0e41de50a55ac3, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -35,7 +40,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Take 001
+      name: Run
       takeName: Take 001
       internalID: 1827226128182048838
       firstFrame: 1
@@ -75,7 +80,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1

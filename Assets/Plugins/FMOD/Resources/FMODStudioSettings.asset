@@ -16,7 +16,7 @@ MonoBehaviour:
   HasSourceProject: 0
   HasPlatforms: 0
   sourceProjectPath: Assets/FMOD/DMT Jam 2/DMT Jam 2.fspro
-  sourceBankPath: Assets\FMOD\DMT Jam 2\Build\Desktop
+  sourceBankPath: Assets\FMOD\DMT Jam 2\Assets
   SourceBankPathUnformatted: 
   AutomaticEventLoading: 1
   BankLoadType: 0
