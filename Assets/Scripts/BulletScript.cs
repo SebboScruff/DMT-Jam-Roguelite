@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
+    [Range(5,15)]
+    public float speed;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -13,6 +16,11 @@ public class BulletScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        transform.Translate(Vector3.forward * speed * Time.deltaTime);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        //collision shit
     }
 }
