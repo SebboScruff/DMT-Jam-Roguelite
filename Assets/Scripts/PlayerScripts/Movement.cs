@@ -11,6 +11,7 @@ public class Movement : MonoBehaviour
     CharacterController controller;
     public bool wallCol;
     public bool faceingRight = true;
+    public GameObject crosshair;
 
     //animation variables
     public Animator animator;
@@ -55,18 +56,15 @@ public class Movement : MonoBehaviour
     {
         controller = GetComponent<CharacterController>();
         //Animation Start
-        animator = this.gameObject.GetComponent<Animator>();
+       // animator = this.gameObject.GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
         MovementMethod();
-        if ((Input.GetAxis("Horizontal") > 0 && !faceingRight) || (Input.GetAxis("Horizontal") < 0 && faceingRight))
-        {
-            Flip();
+        Flip();
 
-        }
     }
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
@@ -91,7 +89,18 @@ public class Movement : MonoBehaviour
     }
     private void Flip()
     {
-        faceingRight =!faceingRight;
-        transform.Rotate(0f, 180f, 0f);
+        if(crosshair.transform.position.x>= transform.position.x)
+        {
+            faceingRight = true;
+            transform.rotation = Quaternion.Euler(0, -90, 0);
+        }
+        else
+        {
+            faceingRight = false;
+            transform.rotation = Quaternion.Euler(0, 90, 0);
+        }
+
+        //faceingRight =!faceingRight;
+        //transform.Rotate(0f, 180f, 0f);
     }
 }

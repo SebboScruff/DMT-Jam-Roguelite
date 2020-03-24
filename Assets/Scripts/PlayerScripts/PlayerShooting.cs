@@ -14,6 +14,7 @@ public class PlayerShooting : MonoBehaviour
     private Rect target;
     public Pause pauseManager;
 
+
     // Start is called before the first frame update
     void Start()
     {
