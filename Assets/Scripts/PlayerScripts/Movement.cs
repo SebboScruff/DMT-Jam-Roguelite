@@ -35,14 +35,18 @@ public class Movement : MonoBehaviour
             {
                 moveDirection.y = jumpSpeed;
                 //animation key
-                animator.SetBool("is_in_air", true);
-            }
-            else
-            {
-                animator.SetBool("is_in_air", false);
             }
         }
-       
+       if (Input.GetKey(KeyCode.Space)) // Animation Get Key Check
+        {
+            animator.SetBool("is_in_air", true);
+        }
+        else
+        {
+            animator.SetBool("is_in_air", false);
+        }
+    
+
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
@@ -76,6 +80,7 @@ public class Movement : MonoBehaviour
                 moveDirection = hit.normal * speed;
                 moveDirection.y = jumpSpeed;
                 Flip();
+
             }
 
         }
@@ -86,7 +91,6 @@ public class Movement : MonoBehaviour
     }
     private void Flip()
     {
-
         faceingRight =!faceingRight;
         transform.Rotate(0f, 180f, 0f);
     }
