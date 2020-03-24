@@ -216,15 +216,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7688229062589299107, guid: b5497a7c53a338d4c9e66ab24f934d7a,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2874032306881279401, guid: b5497a7c53a338d4c9e66ab24f934d7a,
         type: 3}
       propertyPath: m_Name
       value: Turret
+      objectReference: {fileID: 0}
+    - target: {fileID: 7688229062589299107, guid: b5497a7c53a338d4c9e66ab24f934d7a,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1277268569019729850, guid: b5497a7c53a338d4c9e66ab24f934d7a,
         type: 3}
@@ -513,7 +513,7 @@ GameObject:
   - component: {fileID: 710282931}
   - component: {fileID: 710282930}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -695,7 +695,7 @@ GameObject:
   - component: {fileID: 1251361336}
   - component: {fileID: 1251361335}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: WALL
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -810,7 +810,7 @@ PrefabInstance:
     - target: {fileID: 6891237931247745916, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.94
+      value: 3.15
       objectReference: {fileID: 0}
     - target: {fileID: 6891237931247745916, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
@@ -865,7 +865,7 @@ PrefabInstance:
     - target: {fileID: 1355386885401709266, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.407
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6891237932607483854, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
@@ -1442,7 +1442,7 @@ GameObject:
   - component: {fileID: 1960619644}
   - component: {fileID: 1960619643}
   m_Layer: 0
-  m_Name: Floor (1)
+  m_Name: Ceiling
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

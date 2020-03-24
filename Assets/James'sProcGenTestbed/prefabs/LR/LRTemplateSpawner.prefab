@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8840611145186374310}
   - component: {fileID: 8474403045724446794}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LRTemplateSpawner
   m_TagString: Untagged
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
