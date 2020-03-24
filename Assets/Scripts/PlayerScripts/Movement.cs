@@ -46,8 +46,6 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("is_in_air", false);
         }
-    
-
         moveDirection.y -= gravity * Time.deltaTime;
         controller.Move(moveDirection * Time.deltaTime);
     }
@@ -78,9 +76,7 @@ public class Movement : MonoBehaviour
                 moveDirection = hit.normal * speed;
                 moveDirection.y = jumpSpeed;
                 Flip();
-
             }
-
         }
         else
         {
@@ -93,11 +89,16 @@ public class Movement : MonoBehaviour
         {
             faceingRight = true;
             transform.rotation = Quaternion.Euler(0, -90, 0);
+            if (faceingRight = true)
+            {
+                animator.SetBool("isRight", true);
+            }
         }
         else
         {
             faceingRight = false;
             transform.rotation = Quaternion.Euler(0, 90, 0);
+            animator.SetBool("faceingRight", false);
         }
 
         //faceingRight =!faceingRight;
