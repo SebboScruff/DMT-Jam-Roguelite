@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3416489953921557820}
   - component: {fileID: 2324640086324082640}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: LRUDTemplateSpawner
   m_TagString: Untagged
   m_Icon: {fileID: -5938655980376293919, guid: 0000000000000000d000000000000000, type: 0}
