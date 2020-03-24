@@ -4,11 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/dontdestroymusic1.unity
-    guid: b64130146739f3745afa416ab3a9fc62
-  - enabled: 1
-    path: Assets/Scenes/dontdestroymusic2.unity
-    guid: 9649c18198b58f847b959a1e124f49b6
+  m_Scenes: []
   m_configObjects: {}
