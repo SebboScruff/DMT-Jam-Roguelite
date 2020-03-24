@@ -83,13 +83,13 @@ public class Movement : MonoBehaviour
             wallCol = false;
         }
     }
-    private void Flip()
+    public void Flip()
     {
         if(crosshair.transform.position.x>= transform.position.x)
         {
             faceingRight = true;
             transform.rotation = Quaternion.Euler(0, -90, 0);
-            
+            animator.SetBool("faceingRight", true);
         }
         else
         {
