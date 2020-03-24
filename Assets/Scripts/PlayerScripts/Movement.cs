@@ -17,7 +17,7 @@ public class Movement : MonoBehaviour
     
     void MovementMethod()
     {
-        if (controller.isGrounded)
+        if (!wallCol)
         {
             moveDirection.x = speed * Input.GetAxis("Horizontal");
         if (moveDirection.x > 0 || moveDirection.x < 0)
@@ -30,7 +30,8 @@ public class Movement : MonoBehaviour
             }
                    
 
-        if (Input.GetKey(KeyCode.Space))
+
+        if (Input.GetKey(KeyCode.Space)&& controller.isGrounded)
             {
                 moveDirection.y = jumpSpeed;
                 //animation key
@@ -77,6 +78,10 @@ public class Movement : MonoBehaviour
                 Flip();
             }
 
+        }
+        else
+        {
+            wallCol = false;
         }
     }
     private void Flip()
