@@ -50,7 +50,7 @@ MonoBehaviour:
   gravity: 20
   wallCol: 0
   faceingRight: 1
-  player: {fileID: 6891237931247745913}
+  crosshair: {fileID: 0}
   animator: {fileID: 8954650232222853032}
 --- !u!143 &2763044548840273387
 CharacterController:
@@ -349,8 +349,8 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.654
       objectReference: {fileID: 0}
-    m_RemovedComponents: [{fileID: 2236980403418652251, guid: 52b69ca797d90854c99c1661f263df72,
-        type: 3}]
+    m_RemovedComponents:
+    - {fileID: 2236980403418652251, guid: 52b69ca797d90854c99c1661f263df72, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 52b69ca797d90854c99c1661f263df72, type: 3}
 --- !u!4 &1355386885401709266 stripped
 Transform:
