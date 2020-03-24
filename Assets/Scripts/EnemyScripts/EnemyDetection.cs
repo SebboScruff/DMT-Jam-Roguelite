@@ -14,8 +14,6 @@ public class EnemyDetection : MonoBehaviour
     [SerializeField] GameObject bulletPrefab;
     [SerializeField] Transform firingPoint;
     [SerializeField] float shootCD = 3f;
-    [Range(5, 15)]
-    public float bulletSpeed = 7f;
 
 
 
@@ -57,8 +55,6 @@ public class EnemyDetection : MonoBehaviour
         GameObject b = Instantiate(bulletPrefab) as GameObject;
         b.transform.position = firingPoint.transform.position;
         b.transform.rotation = firingPoint.transform.rotation;
-        Vector3 bulletLocalForward = b.transform.worldToLocalMatrix.MultiplyVector(transform.forward).normalized;
-        b.GetComponent<Rigidbody>().velocity = bulletLocalForward * bulletSpeed;
         
         shootCD = 3f;
         InvokeRepeating("ShootCooldown", 0f, 1f);

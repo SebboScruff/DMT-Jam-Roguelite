@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3247490516500721534}
   - component: {fileID: 5363723720967228455}
   - component: {fileID: 7952216431369611994}
-  - component: {fileID: 2413647034650406069}
+  - component: {fileID: 2972426912329454834}
   m_Layer: 0
   m_Name: TestBullet
   m_TagString: Untagged
@@ -92,19 +92,17 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &2413647034650406069
-Rigidbody:
+--- !u!114 &2972426912329454834
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4865188340981231512}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2687166dec1407a4d99e41fda02b58cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  duration: 2
