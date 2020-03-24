@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class BulletScript : MonoBehaviour
 {
-    [Range(5,15)]
+    [Range(0,15)]
     public float speed;
+    [SerializeField] float duration = 2f;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        InvokeRepeating("SpawnoutTimer", 0f, 1f);
     }
 
     // Update is called once per frame
@@ -22,5 +23,15 @@ public class BulletScript : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         //collision shit
+        Destroy(gameObject);
+    }
+
+    void SpawnoutTimer()
+    {
+        duration--;
+        if(duration <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 }

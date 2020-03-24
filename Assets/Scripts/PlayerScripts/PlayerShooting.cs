@@ -43,6 +43,7 @@ public class PlayerShooting : MonoBehaviour
     {
         GameObject b = Instantiate(bullet) as GameObject;
         b.transform.position = firingPoint.transform.position;
+        //b.transform.rotation = firingPoint.transform.rotation;
         b.transform.rotation = Quaternion.Euler(0.0f, 0.0f, rotationZ);
         b.GetComponent<Rigidbody>().velocity = direction * bulletSpeed;
     }
