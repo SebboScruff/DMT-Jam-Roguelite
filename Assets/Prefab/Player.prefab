@@ -253,6 +253,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: VapourDave
       objectReference: {fileID: 0}
+    - target: {fileID: 311481630818212154, guid: 52b69ca797d90854c99c1661f263df72,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3605627641189395241, guid: 52b69ca797d90854c99c1661f263df72,
         type: 3}
       propertyPath: m_LocalPosition.x

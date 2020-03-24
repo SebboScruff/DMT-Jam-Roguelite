@@ -14,13 +14,13 @@ public class EnemyDetection : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(player.transform.position, transform.position) <= detectionRadius)
+        
+        if (Vector3.Distance(player.transform.position, transform.position) <= detectionRadius)
         {
             targetFound = true;
         }
