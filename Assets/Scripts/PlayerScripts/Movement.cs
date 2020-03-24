@@ -89,10 +89,7 @@ public class Movement : MonoBehaviour
         {
             faceingRight = true;
             transform.rotation = Quaternion.Euler(0, -90, 0);
-            if (faceingRight = true)
-            {
-                animator.SetBool("isRight", true);
-            }
+            
         }
         else
         {
