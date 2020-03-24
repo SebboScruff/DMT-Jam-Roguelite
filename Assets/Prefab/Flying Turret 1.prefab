@@ -72,9 +72,10 @@ GameObject:
   m_Component:
   - component: {fileID: 2107869960197140477}
   - component: {fileID: 3106341726077492719}
+  - component: {fileID: 470410403906868067}
   m_Layer: 0
   m_Name: Flying Turret 1
-  m_TagString: Untagged
+  m_TagString: Turret
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -114,6 +115,19 @@ MonoBehaviour:
   detectionDist: 2
   rayOrigin: {fileID: 773752007693957644}
   moveSpeed: 2
+--- !u!65 &470410403906868067
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3106341726077492718}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.99999964, y: 0.7722926, z: 3.8587925}
+  m_Center: {x: -8.226579e-15, y: 0.29092807, z: 0.004214976}
 --- !u!1 &3194707151424594191
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,7 +978,9 @@ PrefabInstance:
       propertyPath: firingPoint
       value: 
       objectReference: {fileID: 175850379630232044}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 477949066521675080, guid: b5497a7c53a338d4c9e66ab24f934d7a, type: 3}
+    - {fileID: 7688229062589299107, guid: b5497a7c53a338d4c9e66ab24f934d7a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b5497a7c53a338d4c9e66ab24f934d7a, type: 3}
 --- !u!4 &1947014806248287786 stripped
 Transform:
