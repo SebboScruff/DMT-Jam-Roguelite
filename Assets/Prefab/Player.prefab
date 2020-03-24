@@ -60,7 +60,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6891237931247745913}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 2.76, y: 3.35, z: 2.15}
+  m_LocalPosition: {x: 4.681, y: 3.35, z: 2.15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1355386885401709266}
@@ -91,11 +91,11 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6891237931748043374}
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.885, z: 0}
+  m_LocalRotation: {x: 0.5287844, y: -0.8487562, z: -0, w: 0}
+  m_LocalPosition: {x: -0.010068402, y: 0.004926846, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1355386885401709266}
+  m_Father: {fileID: 4979719417911681842}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!96 &6891237931748043372
@@ -145,7 +145,7 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0.00642395
-        value: 0.44199944
+        value: 0.34755498
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -175,8 +175,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.10849059, b: 0.5692885, a: 1}
-      key1: {r: 1, g: 1, b: 1, a: 1}
+      key0: {r: 0.8078432, g: 0.054901965, b: 0.58431375, a: 1}
+      key1: {r: 0.9215687, g: 0.7411765, b: 0.21176472, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -202,8 +202,8 @@ TrailRenderer:
       m_Mode: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
-    numCornerVertices: 0
-    numCapVertices: 0
+    numCornerVertices: 30
+    numCapVertices: 30
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
@@ -239,7 +239,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1355386885401709266}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2361731239292690939
 PrefabInstance:
@@ -266,12 +266,12 @@ PrefabInstance:
     - target: {fileID: 3605627641189395241, guid: 52b69ca797d90854c99c1661f263df72,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.885
+      value: -0.839
       objectReference: {fileID: 0}
     - target: {fileID: 3605627641189395241, guid: 52b69ca797d90854c99c1661f263df72,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.027
       objectReference: {fileID: 0}
     - target: {fileID: 3605627641189395241, guid: 52b69ca797d90854c99c1661f263df72,
         type: 3}
@@ -344,6 +344,12 @@ GameObject:
 --- !u!4 &1355386885401709266 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3605627641189395241, guid: 52b69ca797d90854c99c1661f263df72,
+    type: 3}
+  m_PrefabInstance: {fileID: 2361731239292690939}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &4979719417911681842 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7340034383124251337, guid: 52b69ca797d90854c99c1661f263df72,
     type: 3}
   m_PrefabInstance: {fileID: 2361731239292690939}
   m_PrefabAsset: {fileID: 0}
