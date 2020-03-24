@@ -107,7 +107,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   duration: 2
-  spawnDelay: 0.2
+  spawnDelay: 0.5
 --- !u!54 &-7512079416085695625
 Rigidbody:
   m_ObjectHideFlags: 0
