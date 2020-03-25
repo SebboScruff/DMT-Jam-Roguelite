@@ -1730,6 +1730,11 @@ MonoBehaviour:
   - {fileID: 4769401840582240478, guid: 768f646326ddb4f4da844c35c482bad3, type: 3}
   - {fileID: 7211957021206035003, guid: aca76488d3291064aa29578ff18e93fc, type: 3}
   - {fileID: 3314384375545494571, guid: 01e4417aaae42cf428857128b57a0114, type: 3}
+  startPortal: {fileID: 1121086061162345932, guid: eac9a9ed053937a4584d48d1bdc0259f,
+    type: 3}
+  endPortal: {fileID: 1121086061162345932, guid: fb09321bcb7db2243a50d98e6b8f9d3b,
+    type: 3}
+  portalRotatinalOffset: {x: 90, y: 0, z: 0}
   startTimeBetweenRoom: 0
   moveAmount: 10
   minX: -15
