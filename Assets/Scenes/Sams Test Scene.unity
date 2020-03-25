@@ -340,6 +340,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: PauseManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2377457854571032735, guid: 5aef4d556c066a04f90712f2482f52e6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2377457854571032733, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -378,7 +383,7 @@ PrefabInstance:
     - target: {fileID: 2377457854571032733, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2377457854571032733, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
@@ -951,5 +956,5 @@ Transform:
   m_LocalScale: {x: 11.246, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
