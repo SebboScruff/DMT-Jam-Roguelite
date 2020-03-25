@@ -46,7 +46,10 @@ public class Movement : MonoBehaviour
         {
             animator.SetBool("is_in_air", false);
         }
-        moveDirection.y -= gravity * Time.deltaTime;
+        if (!controller.isGrounded)
+        {
+            moveDirection.y -= gravity * Time.deltaTime;
+        }
         controller.Move(moveDirection * Time.deltaTime);
     }
     // Start is called before the first frame update
