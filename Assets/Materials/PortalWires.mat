@@ -103,7 +103,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture2DAsset_C48E5B2E_Out_0:
-        m_Texture: {fileID: 2800000, guid: 705927e44572f3340a3109d74ab6b13d, type: 3}
+        m_Texture: {fileID: 2800000, guid: b8e083d559a8514419c5b57ca4b87b5c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ThicknessMap:
