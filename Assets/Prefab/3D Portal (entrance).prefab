@@ -1,23 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-5598376783816323654
-MonoBehaviour:
+--- !u!1 &596692563697163918
+GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1121086061162345932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4e4af268bb35144f854452f529d761e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 6891237931247745913, guid: 5caa76ac1e12538458dc85b4de000df5,
-    type: 3}
-  levelGen: {fileID: 0}
-  camFollow: {fileID: 0}
-  levelGenName: LevelGenerator
-  camName: Main Camera
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8422796867227947}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8422796867227947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 596692563697163918}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -0.00000059604645, y: -0.7771989, z: 0.00000059604645}
+  m_LocalScale: {x: 2, y: 2.0000005, z: 2.0000005}
+  m_Children: []
+  m_Father: {fileID: 1121086061162345920}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &3453526119158786373
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31,6 +43,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpeed: 30
+--- !u!114 &-5598376783816323654
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121086061162345932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4e4af268bb35144f854452f529d761e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPrefab: {fileID: 4472061780094369338, guid: b3aaf06d31bf6a24c91ed0d55a826715,
+    type: 3}
+  levelGen: {fileID: 0}
+  camFollow: {fileID: 0}
+  levelGenName: LevelGenerator
+  camName: Main Camera
 --- !u!1001 &4153059378011178108
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -133,6 +163,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6022081413822994757, guid: c259560c63a1bb34bb2c10f6c4c34508,
+        type: 3}
+      propertyPath: m_Name
+      value: 3D Portal (entrance)
+      objectReference: {fileID: 0}
     - target: {fileID: 6022081413822994761, guid: c259560c63a1bb34bb2c10f6c4c34508,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -203,11 +238,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 6022081413822994757, guid: c259560c63a1bb34bb2c10f6c4c34508,
-        type: 3}
-      propertyPath: m_Name
-      value: 3D Portal (entrance)
-      objectReference: {fileID: 0}
     - target: {fileID: 6022081413822994760, guid: c259560c63a1bb34bb2c10f6c4c34508,
         type: 3}
       propertyPath: m_Size.y
@@ -230,6 +260,8 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 7d70e96695ce65744929287430ec31a4, type: 2}
     m_RemovedComponents:
     - {fileID: 6022081413822994767, guid: c259560c63a1bb34bb2c10f6c4c34508, type: 3}
+    - {fileID: 6022081413822994760, guid: c259560c63a1bb34bb2c10f6c4c34508, type: 3}
+    - {fileID: 6022081413822994756, guid: c259560c63a1bb34bb2c10f6c4c34508, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c259560c63a1bb34bb2c10f6c4c34508, type: 3}
 --- !u!1 &1121086061162345932 stripped
 GameObject:
