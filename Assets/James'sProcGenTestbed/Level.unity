@@ -504,6 +504,7 @@ GameObject:
   - component: {fileID: 717232107}
   - component: {fileID: 717232106}
   - component: {fileID: 717232109}
+  - component: {fileID: 717232110}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -670,6 +671,21 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!114 &717232110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 717232105}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1855b707a1fe0bc43aac7b7e6e013464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  smoothingSpeed: 0.125
+  cameraOffset: {x: 0, y: 0, z: -10}
 --- !u!1 &723999297
 GameObject:
   m_ObjectHideFlags: 0
@@ -1730,6 +1746,11 @@ MonoBehaviour:
   - {fileID: 4769401840582240478, guid: 768f646326ddb4f4da844c35c482bad3, type: 3}
   - {fileID: 7211957021206035003, guid: aca76488d3291064aa29578ff18e93fc, type: 3}
   - {fileID: 3314384375545494571, guid: 01e4417aaae42cf428857128b57a0114, type: 3}
+  startPortal: {fileID: 1121086061162345932, guid: eac9a9ed053937a4584d48d1bdc0259f,
+    type: 3}
+  endPortal: {fileID: 1121086061162345932, guid: fb09321bcb7db2243a50d98e6b8f9d3b,
+    type: 3}
+  portalRotatinalOffset: {x: 90, y: 0, z: 0}
   startTimeBetweenRoom: 0
   moveAmount: 10
   minX: -15

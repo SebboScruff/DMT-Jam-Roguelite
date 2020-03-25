@@ -7,6 +7,7 @@ public class levelgenerator : MonoBehaviour
     public Transform[] startPositions;
     public GameObject[] rooms; //0 --> LR, 1 --> LRD, 2 --> LRU, 3 --> LRUD
     public GameObject startPortal, endPortal;
+    public Vector3 portalRotatinalOffset;
 
     float timeBetweenRoom;
     public float startTimeBetweenRoom = 0.25f;
@@ -29,8 +30,10 @@ public class levelgenerator : MonoBehaviour
         int randomStartingPos = Random.Range(0, startPositions.Length);
         transform.position = startPositions[randomStartingPos].position;
         Instantiate(rooms[0], transform.position, Quaternion.identity);
-        Instantiate(startPortal, transform.position, Quaternion.identity);
-
+        GameObject portal = (GameObject)Instantiate(startPortal, transform.position, Quaternion.identity);
+        Quaternion rotOffset = new Quaternion();
+        rotOffset.eulerAngles = portalRotatinalOffset;
+        portal.transform.rotation = rotOffset;
         direction = Random.Range(1, 6);
     }
 
@@ -120,7 +123,10 @@ public class levelgenerator : MonoBehaviour
             else
             {
                 stopGen = true;
-                Instantiate(endPortal, transform.position, Quaternion.identity);
+                GameObject portal = (GameObject)Instantiate(endPortal, transform.position, Quaternion.identity);
+                Quaternion rotOffset = new Quaternion();
+                rotOffset.eulerAngles = portalRotatinalOffset;
+                portal.transform.rotation = rotOffset;
             }
         }
     }
