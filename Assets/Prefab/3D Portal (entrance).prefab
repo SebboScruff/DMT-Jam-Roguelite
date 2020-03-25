@@ -15,7 +15,9 @@ MonoBehaviour:
   playerPrefab: {fileID: 6891237931247745913, guid: 5caa76ac1e12538458dc85b4de000df5,
     type: 3}
   levelGen: {fileID: 0}
+  camFollow: {fileID: 0}
   levelGenName: LevelGenerator
+  camName: Main Camera
 --- !u!114 &3453526119158786373
 MonoBehaviour:
   m_ObjectHideFlags: 0
