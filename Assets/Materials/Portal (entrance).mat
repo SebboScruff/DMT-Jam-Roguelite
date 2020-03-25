@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Portal
+  m_Name: Portal (entrance)
   m_Shader: {fileID: -6465566751694194690, guid: 19738fc17959526439d65e6f36b5314d,
     type: 3}
   m_ShaderKeywords: 
