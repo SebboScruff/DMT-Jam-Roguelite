@@ -98,11 +98,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3390582218138389175, guid: b5497a7c53a338d4c9e66ab24f934d7a,
+        type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 5500256429055208639, guid: 88fcec89f81c5f045b66745a3778b488,
+        type: 3}
+    - target: {fileID: 3390582218138389175, guid: b5497a7c53a338d4c9e66ab24f934d7a,
+        type: 3}
+      propertyPath: firingPoint
+      value: 
+      objectReference: {fileID: 1766303385927386342}
+    - target: {fileID: 3390582218138389175, guid: b5497a7c53a338d4c9e66ab24f934d7a,
+        type: 3}
+      propertyPath: pauseManager
+      value: 
+      objectReference: {fileID: 2377457854571032734, guid: 5aef4d556c066a04f90712f2482f52e6,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5497a7c53a338d4c9e66ab24f934d7a, type: 3}
 --- !u!4 &141505813484481312 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1277268569019729850, guid: b5497a7c53a338d4c9e66ab24f934d7a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1175296801001204890}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1766303385927386342 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 633975812874430588, guid: b5497a7c53a338d4c9e66ab24f934d7a,
     type: 3}
   m_PrefabInstance: {fileID: 1175296801001204890}
   m_PrefabAsset: {fileID: 0}
