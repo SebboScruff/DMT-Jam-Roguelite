@@ -17,7 +17,5 @@ public class CurrencyPickUp : MonoBehaviour
     void Update()
     {
         transform.eulerAngles += new Vector3(0f, turnSpeed, 0f) * Time.deltaTime;
-
-
     }
 }

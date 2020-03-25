@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Music
   - Turret
+  - Currency
   layers:
   - Default
   - TransparentFX
