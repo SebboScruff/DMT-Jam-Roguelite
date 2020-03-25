@@ -17,7 +17,7 @@ MonoBehaviour:
   gravity: 0
   wallCol: 0
   faceingRight: 1
-  player: {fileID: 0}
+  crosshair: {fileID: 0}
   animator: {fileID: 0}
 --- !u!1001 &8607355198277795891
 PrefabInstance:
@@ -26,6 +26,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -927199367670048503, guid: 3ea50d85165494f48ad40d522449e871,
+        type: 3}
+      propertyPath: m_Name
+      value: VapourDave
+      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 3ea50d85165494f48ad40d522449e871,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -81,16 +86,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 3ea50d85165494f48ad40d522449e871,
-        type: 3}
-      propertyPath: m_Name
-      value: VapourDave
-      objectReference: {fileID: 0}
     - target: {fileID: -6057140222963153312, guid: 3ea50d85165494f48ad40d522449e871,
         type: 3}
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 5dfbdd74078fb4f4dbcd72dc7b7b7eac, type: 2}
+    - target: {fileID: -2292123765663785615, guid: 3ea50d85165494f48ad40d522449e871,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3ea50d85165494f48ad40d522449e871, type: 3}
 --- !u!1 &311481630818212154 stripped

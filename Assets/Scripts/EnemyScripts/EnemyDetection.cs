@@ -20,7 +20,7 @@ public class EnemyDetection : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        //player = GameObject.FindGameObjectWithTag("Player");
         shootCD = 0f;
     }
 
@@ -68,4 +68,10 @@ public class EnemyDetection : MonoBehaviour
         }
         else { CancelInvoke(); }
     }
+
+    private void LateUpdate()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+    }
+
 }
