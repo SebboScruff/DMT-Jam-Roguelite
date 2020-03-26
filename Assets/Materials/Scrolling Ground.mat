@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: score
-  m_Shader: {fileID: -6465566751694194690, guid: 74d955ddfa3d3f44987110bcd2e0b423,
+  m_Name: Scrolling Ground
+  m_Shader: {fileID: -6465566751694194690, guid: daf151db54c975e48857676ddc9931e3,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -82,6 +82,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _SampleTexture2D_21697BE9_Texture_1:
+        m_Texture: {fileID: 2800000, guid: 483a2303d5e48d74aaf919b3b168023f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecularColorMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -107,8 +111,6 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_4FE09627: 1.79
-    - Vector1_C05B24DC: 39.89
     - _AORemapMax: 1
     - _AORemapMin: 0
     - _ATDistance: 1
@@ -234,8 +236,6 @@ Material:
     - _ZTestModeDistortion: 8
     - _ZWrite: 1
     m_Colors:
-    - Color_35E4CB9: {r: 0.8584906, g: 0, b: 0.5678968, a: 1}
-    - Color_883F7EE3: {r: 1, g: 0.74655277, b: 0, a: 1}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _BaseColorMap_MipInfo: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}

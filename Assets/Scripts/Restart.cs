@@ -5,10 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider coll)
     {
-        if(collision.gameObject.tag == "Player")
+        if(coll.gameObject.tag == "Player")
         {
+            Debug.Log("You made it");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }

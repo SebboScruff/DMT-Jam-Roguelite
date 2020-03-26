@@ -12,6 +12,8 @@ public class Movement : MonoBehaviour
     public bool wallCol;
     public bool faceingRight = true;
     public GameObject crosshair;
+    public bool touchingTop;
+    public GameObject player;
 
     //animation variables
     public Animator animator;
@@ -29,16 +31,17 @@ public class Movement : MonoBehaviour
             {
                 animator.SetBool("is_running", false);
             }
-                   
 
 
-        if (Input.GetKey(KeyCode.Space)&& controller.isGrounded)
+
+        if (Input.GetKey(KeyCode.Space)&& controller.isGrounded && !touchingTop)
+
             {
                 moveDirection.y = jumpSpeed;
                 //animation key
             }
         }
-       if (Input.GetKey(KeyCode.Space)) // Animation Get Key Check
+        if (Input.GetKey(KeyCode.Space)) // Animation Get Key Check
         {
             animator.SetBool("is_in_air", true);
         }
@@ -51,6 +54,8 @@ public class Movement : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
         }
         controller.Move(moveDirection * Time.deltaTime);
+
+
     }
     // Start is called before the first frame update
     void Start()
@@ -63,6 +68,24 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if ((controller.collisionFlags & CollisionFlags.Above) != 0)
+        {
+            print("Touching Ceiling!");
+            touchingTop = true;
+        }
+        else
+        {
+            touchingTop = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            player.transform.localScale = (new Vector3(.5f, .5f, .5f));
+        }
+        else if (Input.GetKeyUp(KeyCode.X))
+        {
+            player.transform.localScale = (new Vector3(1f, 1f, 1f));
+        }
         MovementMethod();
         Flip();
 
@@ -70,7 +93,9 @@ public class Movement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-         if(hit.normal.y< 0.1&& !controller.isGrounded)
+
+         if(hit.normal.y< 0.1&& !controller.isGrounded && !touchingTop)
+
         {
             wallCol = true;
 
