@@ -34,6 +34,24 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-3438080275275162022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Master.bank
+  SubDir: 
+  lastModified: 637208443663956718
+  LoadResult: 0
+  FileSizes: []
+  Exists: 1
 --- !u!114 &-3409099706303499160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,7 +70,7 @@ MonoBehaviour:
   LoadResult: 0
   FileSizes: []
   Exists: 1
---- !u!114 &-1861001017427027642
+--- !u!114 &-2690455025438495541
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -69,6 +87,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 1
+--- !u!114 &-1861001017427027642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/VapourMeter
+  m_EditorClassIdentifier: 
+  Name: VapourMeter
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 0
 --- !u!114 &-1241966621537949570
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,12 +143,12 @@ MonoBehaviour:
   Path: event:/Music
   guid: 0e43e22b48a0ba46b99009b9bc48f365
   Banks:
-  - {fileID: 4166569814397777111}
+  - {fileID: -3438080275275162022}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -1861001017427027642}
+  - {fileID: -2690455025438495541}
   MinDistance: 0
   MaxDistance: 0
   Length: 87994
@@ -129,18 +164,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: 3635754114244627198}
-  - {fileID: 4166569814397777111}
-  EditorEvents:
-  - {fileID: -130487596573742252}
+  EditorBanks: []
+  EditorEvents: []
   EditorParameters: []
-  MasterBanks:
-  - {fileID: 4166569814397777111}
-  StringsBanks:
-  - {fileID: 3635754114244627198}
-  stringsBankWriteTime: 637208432056233921
+  MasterBanks: []
+  StringsBanks: []
+  stringsBankWriteTime: 0
   cacheVersion: 3
+--- !u!114 &512603619798091557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/StreamingAssets/Master.strings.bank
+  SubDir: 
+  lastModified: 637208443664296596
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 784
+  Exists: 1
 --- !u!114 &1260983535697420972
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -198,7 +248,7 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 784
-  Exists: 1
+  Exists: 0
 --- !u!114 &4166569814397777111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,4 +266,4 @@ MonoBehaviour:
   lastModified: 637208432056213984
   LoadResult: 0
   FileSizes: []
-  Exists: 1
+  Exists: 0
