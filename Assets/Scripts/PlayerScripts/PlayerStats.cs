@@ -5,13 +5,13 @@ using UnityEngine.SceneManagement;
 public class PlayerStats : MonoBehaviour
 {
     public int health;
+    [SerializeField] private int maxHealth = 5;
     public int score;
 
     // Start is called before the first frame update
     void Start()
     {
-        health = 3;
-
+        health = maxHealth;
     }
 
     // Update is called once per frame

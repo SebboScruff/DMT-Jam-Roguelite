@@ -16,7 +16,47 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
+  Exists: 0
+--- !u!114 &-7200033013112597216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Music/VapourMeter
+  m_EditorClassIdentifier: 
+  Name: VapourMeter
+  Min: 0
+  Max: 1
+  Default: 0
   Exists: 1
+--- !u!114 &-5678765829506251116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Footstep
+  m_EditorClassIdentifier: 
+  Path: event:/Footstep
+  guid: 42dd6b78da2ba64b9f425500b8193a73
+  Banks:
+  - {fileID: 2312406243012095816}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 125
 --- !u!114 &-4244884867007360350
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67,12 +107,12 @@ MonoBehaviour:
   Path: event:/Music
   guid: 0e43e22b48a0ba46b99009b9bc48f365
   Banks:
-  - {fileID: 1307695277718779365}
+  - {fileID: 2312406243012095816}
   IsStream: 1
   Is3D: 0
   IsOneShot: 0
   Parameters:
-  - {fileID: -7676857440014218647}
+  - {fileID: -7200033013112597216}
   MinDistance: 0
   MaxDistance: 0
   Length: 87994
@@ -90,15 +130,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   EditorBanks:
   - {fileID: 1260983535697420972}
-  - {fileID: 1307695277718779365}
+  - {fileID: 2312406243012095816}
   EditorEvents:
   - {fileID: -1241966621537949570}
+  - {fileID: -5678765829506251116}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 1307695277718779365}
+  - {fileID: 2312406243012095816}
   StringsBanks:
   - {fileID: 1260983535697420972}
-  stringsBankWriteTime: 637206793910308223
+  stringsBankWriteTime: 637208190407700899
   cacheVersion: 3
 --- !u!114 &1260983535697420972
 MonoBehaviour:
@@ -114,11 +155,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: Assets/FMOD/DMT Jam 2/Build/Desktop/Master.strings.bank
   SubDir: 
-  lastModified: 637206793910308223
+  lastModified: 637208190407700899
   LoadResult: 0
   FileSizes:
   - Name: 
-    Value: 784
+    Value: 834
   Exists: 1
 --- !u!114 &1307695277718779365
 MonoBehaviour:
@@ -135,6 +176,24 @@ MonoBehaviour:
   Path: Assets/FMOD/DMT Jam 2/Build/Desktop/Master.bank
   SubDir: 
   lastModified: 637206793910298248
+  LoadResult: 0
+  FileSizes: []
+  Exists: 0
+--- !u!114 &2312406243012095816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMOD/DMT Jam 2/Build/Desktop/Master.bank
+  SubDir: 
+  lastModified: 637208190407681004
   LoadResult: 0
   FileSizes: []
   Exists: 1

@@ -9,9 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6182025889829657240}
+  - component: {fileID: 7674029066796748685}
   m_Layer: 0
   m_Name: MainTurret
-  m_TagString: Untagged
+  m_TagString: explodable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,6 +32,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!135 &7674029066796748685
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8365265688870374906}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1175296801001204890
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -115,6 +129,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2377457854571032734, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
+    - target: {fileID: 3390582218138389175, guid: b5497a7c53a338d4c9e66ab24f934d7a,
+        type: 3}
+      propertyPath: shootCD
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5497a7c53a338d4c9e66ab24f934d7a, type: 3}
 --- !u!4 &141505813484481312 stripped
