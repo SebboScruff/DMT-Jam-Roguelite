@@ -10,7 +10,7 @@ public class Movement : MonoBehaviour
     private Vector3 moveDirection;
     CharacterController controller;
     public bool wallCol;
-    public bool faceingRight = true;
+    static public bool faceingRight = true;
     public GameObject crosshair;
     public bool touchingTop;
     public GameObject player;
