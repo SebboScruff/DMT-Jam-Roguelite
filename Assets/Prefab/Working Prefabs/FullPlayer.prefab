@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 189787684221827234}
   - component: {fileID: 6089059812996318371}
   - component: {fileID: 4431540524168535220}
-  - component: {fileID: 5529905063349555609}
   - component: {fileID: 6329938803903155500}
+  - component: {fileID: 7901762921526745776}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -180,7 +180,22 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
---- !u!114 &5529905063349555609
+--- !u!114 &6329938803903155500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 137999067815659325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1855b707a1fe0bc43aac7b7e6e013464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerTransform: {fileID: 2660421048253074996}
+  SmoothFactor: 1
+  LookAtPlayer: 1
+--- !u!114 &7901762921526745776
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -199,22 +214,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   bulletSpeed: 6
   pauseManager: {fileID: 3883400106400586283}
-  distance: 10
---- !u!114 &6329938803903155500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137999067815659325}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1855b707a1fe0bc43aac7b7e6e013464, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerTransform: {fileID: 2660421048253074996}
-  SmoothFactor: 1
-  LookAtPlayer: 1
+  distance: 0
 --- !u!1 &2170654634977634417
 GameObject:
   m_ObjectHideFlags: 0
