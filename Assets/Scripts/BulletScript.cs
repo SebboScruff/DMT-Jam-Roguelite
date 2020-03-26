@@ -34,7 +34,8 @@ public class BulletScript : MonoBehaviour
         switch(other.gameObject.tag)
         {
             case "Player":
-                Debug.Log("Ouch");
+                PlayerStats playerStats = other.gameObject.GetComponent<PlayerStats>();
+                playerStats.TakeDamage(1);
                 break;
             case "Turret":
                 Destroy(other.gameObject);
