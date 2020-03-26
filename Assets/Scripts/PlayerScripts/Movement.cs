@@ -33,13 +33,15 @@ public class Movement : MonoBehaviour
             }
 
 
+
         if (Input.GetKey(KeyCode.Space)&& controller.isGrounded && !touchingTop)
+
             {
                 moveDirection.y = jumpSpeed;
                 //animation key
             }
         }
-       if (Input.GetKey(KeyCode.Space)) // Animation Get Key Check
+        if (Input.GetKey(KeyCode.Space)) // Animation Get Key Check
         {
             animator.SetBool("is_in_air", true);
         }
@@ -91,7 +93,9 @@ public class Movement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
+
          if(hit.normal.y< 0.1&& !controller.isGrounded && !touchingTop)
+
         {
             wallCol = true;
 
