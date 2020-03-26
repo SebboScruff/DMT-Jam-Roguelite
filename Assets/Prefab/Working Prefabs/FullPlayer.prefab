@@ -478,6 +478,11 @@ PrefabInstance:
       propertyPath: crosshair
       value: 
       objectReference: {fileID: 4450349946788223490}
+    - target: {fileID: 2598881096846923728, guid: 5caa76ac1e12538458dc85b4de000df5,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 4472061780094369338}
     - target: {fileID: 2763044548840273387, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
       propertyPath: m_Height
