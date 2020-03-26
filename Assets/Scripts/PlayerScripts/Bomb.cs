@@ -30,9 +30,9 @@ public class Bomb : MonoBehaviour
         {
             Boom();
         }
-        else
+
         {
-            currentTime += currentTime;
+            currentTime += Time.deltaTime;
         }
     }
     void Boom()
@@ -48,5 +48,6 @@ public class Bomb : MonoBehaviour
             }
             i++;
         }
+        Destroy(this.gameObject);
     }
 }

@@ -483,6 +483,12 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 4472061780094369338}
+    - target: {fileID: 2598881096846923728, guid: 5caa76ac1e12538458dc85b4de000df5,
+        type: 3}
+      propertyPath: bomb
+      value: 
+      objectReference: {fileID: 5692768468511711969, guid: 2a2a62d2d2a15d946925edf54d3fb44c,
+        type: 3}
     - target: {fileID: 2763044548840273387, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
       propertyPath: m_Height

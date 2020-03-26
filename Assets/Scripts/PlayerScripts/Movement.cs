@@ -14,6 +14,7 @@ public class Movement : MonoBehaviour
     public GameObject crosshair;
     public bool touchingTop;
     public GameObject player;
+    public GameObject bomb;
 
     //animation variables
     public Animator animator;
@@ -85,6 +86,11 @@ public class Movement : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.X))
         {
             player.transform.localScale = (new Vector3(1f, 1f, 1f));
+        }
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Instantiate(bomb);
         }
         MovementMethod();
         Flip();
