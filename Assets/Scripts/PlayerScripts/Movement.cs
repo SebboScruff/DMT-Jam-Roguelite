@@ -13,6 +13,7 @@ public class Movement : MonoBehaviour
     public bool faceingRight = true;
     public GameObject crosshair;
     public bool touchingTop;
+    public GameObject player;
 
     //animation variables
     public Animator animator;
@@ -56,6 +57,8 @@ public class Movement : MonoBehaviour
             moveDirection.y -= gravity * Time.deltaTime;
         }
         controller.Move(moveDirection * Time.deltaTime);
+
+
     }
     // Start is called before the first frame update
     void Start()
@@ -76,6 +79,15 @@ public class Movement : MonoBehaviour
         else
         {
             touchingTop = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            player.transform.localScale = (new Vector3(.5f, .5f, .5f));
+        }
+        else if (Input.GetKeyUp(KeyCode.X))
+        {
+            player.transform.localScale = (new Vector3(1f, 1f, 1f));
         }
         MovementMethod();
         Flip();
