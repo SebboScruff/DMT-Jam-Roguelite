@@ -23,6 +23,7 @@ public class PlayerStats : MonoBehaviour
         }
 
         Debug.Log("Current health: " + health);
+        Debug.Log("Current score: " + score);
     }
 
     public void TakeDamage(int damage)
