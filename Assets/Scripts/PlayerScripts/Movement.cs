@@ -14,6 +14,9 @@ public class Movement : MonoBehaviour
     public GameObject crosshair;
     public bool touchingTop;
     public GameObject player;
+    public GameObject bomb;
+    public GameObject bombFP;
+    public float bombAmmo = 3;
 
     //animation variables
     public Animator animator;
@@ -82,9 +85,15 @@ public class Movement : MonoBehaviour
         {
             player.transform.localScale = (new Vector3(.5f, .5f, .5f));
         }
-        else if (Input.GetKeyUp(KeyCode.X))
+        else if (Input.GetKeyUp(KeyCode.X)&& !touchingTop)
         {
             player.transform.localScale = (new Vector3(1f, 1f, 1f));
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1)&& bombAmmo > 0)
+        {
+            Instantiate(bomb, bombFP.transform.position, Quaternion.identity);
+            bombAmmo -= 1;
         }
         MovementMethod();
         Flip();
