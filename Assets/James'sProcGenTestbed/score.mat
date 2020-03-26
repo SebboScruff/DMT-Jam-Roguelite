@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: score
-  m_Shader: {fileID: -6465566751694194690, guid: 6b0650416871fd04eaa0eed3a46d0955,
+  m_Shader: {fileID: -6465566751694194690, guid: 74d955ddfa3d3f44987110bcd2e0b423,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
