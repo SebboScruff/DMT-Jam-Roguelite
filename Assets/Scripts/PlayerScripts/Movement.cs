@@ -12,6 +12,7 @@ public class Movement : MonoBehaviour
     public bool wallCol;
     public bool faceingRight = true;
     public GameObject crosshair;
+    public bool touchingTop;
 
     //animation variables
     public Animator animator;
@@ -32,7 +33,7 @@ public class Movement : MonoBehaviour
                    
 
 
-        if (Input.GetKey(KeyCode.Space)&& controller.isGrounded)
+        if (Input.GetKey(KeyCode.Space)&& controller.isGrounded && !touchingTop)
             {
                 moveDirection.y = jumpSpeed;
                 //animation key
@@ -63,6 +64,15 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if ((controller.collisionFlags & CollisionFlags.Above) != 0)
+        {
+            print("Touching Ceiling!");
+            touchingTop = true;
+        }
+        else
+        {
+            touchingTop = false;
+        }
         MovementMethod();
         Flip();
 
@@ -70,7 +80,7 @@ public class Movement : MonoBehaviour
 
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
-         if(hit.normal.y< 0.1&& !controller.isGrounded)
+         if(hit.normal.y< 0.1&& !controller.isGrounded && !touchingTop)
         {
             wallCol = true;
 
