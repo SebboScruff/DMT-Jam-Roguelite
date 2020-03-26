@@ -109,6 +109,7 @@ MonoBehaviour:
   currentTime: 0
   force: 500
   blastRadius: 2
+  boom: {fileID: 5178159924728244224, guid: 2c3f3a316488b024bb5324f3b8c44a5b, type: 3}
 --- !u!54 &2495494343439374822
 Rigidbody:
   m_ObjectHideFlags: 0
