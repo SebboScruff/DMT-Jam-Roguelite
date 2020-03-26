@@ -90,7 +90,7 @@ public class Movement : MonoBehaviour
             player.transform.localScale = (new Vector3(1f, 1f, 1f));
         }
 
-        if (Input.GetKeyDown(KeyCode.E)&& bombAmmo > 0)
+        if (Input.GetKeyDown(KeyCode.Mouse1)&& bombAmmo > 0)
         {
             Instantiate(bomb, bombFP.transform.position, Quaternion.identity);
             bombAmmo -= 1;
