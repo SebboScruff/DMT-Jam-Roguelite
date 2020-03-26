@@ -81,11 +81,11 @@ public class Movement : MonoBehaviour
             touchingTop = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.S))
         {
             player.transform.localScale = (new Vector3(.5f, .5f, .5f));
         }
-        else if (Input.GetKeyUp(KeyCode.X)&& !touchingTop)
+        else if (Input.GetKeyUp(KeyCode.S)&& !touchingTop)
         {
             player.transform.localScale = (new Vector3(1f, 1f, 1f));
         }
