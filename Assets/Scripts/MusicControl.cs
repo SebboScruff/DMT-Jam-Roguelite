@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using FMOD;
 using FMODUnity;
@@ -26,12 +27,36 @@ public class MusicControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name.Contains("Menu"))
+        {
+            vapourMeter = 1;
+        }
+
+        if (scene.name == "Level")
+        {
+            vapourMeter = 0;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Level")
+        {
+            vapourMeter = Mathf.Lerp(vapourMeter, 0, 1.2f * Time.deltaTime);
+        }
+
+        if (scene.name.Contains("Menu"))
+        {
+            vapourMeter = Mathf.Lerp(vapourMeter, 1, 1.2f * Time.deltaTime);
+        }
+
+
+
         //Checks and changes the vapour meter in FMOD
         GetComponent<StudioEventEmitter>().EventInstance.setParameterByName("VapourMeter", vapourMeter);
     }
