@@ -8,6 +8,7 @@ public class Bomb : MonoBehaviour
     public float currentTime;
     public float force;
     public float blastRadius;
+    public GameObject boom;
     Rigidbody rb;
     // Start is called before the first frame update
     void Start()
@@ -48,6 +49,7 @@ public class Bomb : MonoBehaviour
             }
             i++;
         }
+        Instantiate(boom, transform.position, Quaternion.identity);
         Destroy(this.gameObject);
     }
 }
