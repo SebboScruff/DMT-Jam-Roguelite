@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
     public GameObject player;
     public GameObject bomb;
     public GameObject bombFP;
-    private float small;
+    private float small =1 ;
     public float bombAmmo = 3;
 
     //animation variables
