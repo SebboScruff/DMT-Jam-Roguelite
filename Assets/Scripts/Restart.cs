@@ -9,6 +9,7 @@ public class Restart : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
+            Debug.Log("You made it");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
