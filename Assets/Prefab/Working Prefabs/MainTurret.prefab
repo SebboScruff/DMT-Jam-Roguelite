@@ -115,6 +115,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2377457854571032734, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
+    - target: {fileID: 3390582218138389175, guid: b5497a7c53a338d4c9e66ab24f934d7a,
+        type: 3}
+      propertyPath: shootCD
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5497a7c53a338d4c9e66ab24f934d7a, type: 3}
 --- !u!4 &141505813484481312 stripped
