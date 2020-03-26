@@ -199,6 +199,7 @@ MonoBehaviour:
   pos: {x: 0, y: 0, z: 0}
   bulletSpeed: 6
   pauseManager: {fileID: 3883400106400586283}
+  distance: 10
 --- !u!114 &8452745478590567212
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -320,6 +321,16 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2377457856233581592, guid: 5aef4d556c066a04f90712f2482f52e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 28.827026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377457855963991368, guid: 5aef4d556c066a04f90712f2482f52e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.827026
+      objectReference: {fileID: 0}
     - target: {fileID: 2377457855963991375, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -369,16 +380,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2377457856233581592, guid: 5aef4d556c066a04f90712f2482f52e6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 28.827026
-      objectReference: {fileID: 0}
-    - target: {fileID: 2377457855963991368, guid: 5aef4d556c066a04f90712f2482f52e6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -28.827026
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aef4d556c066a04f90712f2482f52e6, type: 3}
@@ -472,11 +473,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2598881096846923728, guid: 5caa76ac1e12538458dc85b4de000df5,
-        type: 3}
-      propertyPath: crosshair
-      value: 
-      objectReference: {fileID: 4450349946788223490}
     - target: {fileID: 2763044548840273387, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
       propertyPath: m_Height
@@ -492,6 +488,11 @@ PrefabInstance:
       propertyPath: m_Center.y
       value: 0.83
       objectReference: {fileID: 0}
+    - target: {fileID: 2598881096846923728, guid: 5caa76ac1e12538458dc85b4de000df5,
+        type: 3}
+      propertyPath: crosshair
+      value: 
+      objectReference: {fileID: 4450349946788223490}
     - target: {fileID: 2635754668617201857, guid: 5caa76ac1e12538458dc85b4de000df5,
         type: 3}
       propertyPath: m_TagString
