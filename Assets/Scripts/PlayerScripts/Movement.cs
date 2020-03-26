@@ -16,6 +16,7 @@ public class Movement : MonoBehaviour
     public GameObject player;
     public GameObject bomb;
     public GameObject bombFP;
+    private float small;
     public float bombAmmo = 3;
 
     //animation variables
@@ -25,7 +26,7 @@ public class Movement : MonoBehaviour
     {
         if (!wallCol)
         {
-            moveDirection.x = speed * Input.GetAxis("Horizontal");
+            moveDirection.x = speed * Input.GetAxis("Horizontal")* small;
         if (moveDirection.x > 0 || moveDirection.x < 0)
             {
                 animator.SetBool("is_running", true);
@@ -84,10 +85,12 @@ public class Movement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.S))
         {
             player.transform.localScale = (new Vector3(.5f, .5f, .5f));
+            small = .5f;
         }
         else if (Input.GetKeyUp(KeyCode.S)&& !touchingTop)
         {
             player.transform.localScale = (new Vector3(1f, 1f, 1f));
+            small = 1;
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse1)&& bombAmmo > 0)
