@@ -85,7 +85,7 @@ public class Movement : MonoBehaviour
         {
             player.transform.localScale = (new Vector3(.5f, .5f, .5f));
         }
-        else if (Input.GetKeyUp(KeyCode.X))
+        else if (Input.GetKeyUp(KeyCode.X)&& !touchingTop)
         {
             player.transform.localScale = (new Vector3(1f, 1f, 1f));
         }
