@@ -11,11 +11,10 @@ public class Score : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log(other.name);
-        if (other.name == playerName)
+        if (other.tag == "Player")
         {
             Instantiate(scoreCanvas, transform.position, Quaternion.identity);
-            PlayerStats playerStats = other.gameObject.GetComponentInChildren<PlayerStats>();
-            playerStats.score += scoreValue;
+            PlayerStats.score += scoreValue;
         }
 
         Destroy(this.gameObject);

@@ -24,6 +24,14 @@ public class Movement : MonoBehaviour
     
     void MovementMethod()
     {
+        if (!controller.isGrounded)
+        {
+            moveDirection.y -= gravity * Time.deltaTime;
+        }
+        else
+        {
+            moveDirection.y = 0;
+        }
         if (!wallCol)
         {
             moveDirection.x = speed * Input.GetAxis("Horizontal")* small;
@@ -52,10 +60,6 @@ public class Movement : MonoBehaviour
         else
         {
             animator.SetBool("is_in_air", false);
-        }
-        if (!controller.isGrounded)
-        {
-            moveDirection.y -= gravity * Time.deltaTime;
         }
         controller.Move(moveDirection * Time.deltaTime);
 
@@ -106,12 +110,12 @@ public class Movement : MonoBehaviour
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
 
-         if(hit.normal.y< 0.1&& !controller.isGrounded && !touchingTop)
+         if(hit.normal.y< 0.1&& !controller.isGrounded && (controller.collisionFlags == CollisionFlags.Sides))
 
         {
             wallCol = true;
 
-            if (Input.GetKey(KeyCode.Space))
+            if (Input.GetKey(KeyCode.Space)&&!controller.isGrounded)
             {
                 moveDirection = hit.normal * speed;
                 moveDirection.y = jumpSpeed;
