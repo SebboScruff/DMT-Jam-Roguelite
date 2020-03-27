@@ -14,8 +14,7 @@ public class Score : MonoBehaviour
         if (other.tag == "Player")
         {
             Instantiate(scoreCanvas, transform.position, Quaternion.identity);
-            PlayerStats playerStats = other.gameObject.GetComponentInChildren<PlayerStats>();
-            playerStats.score += scoreValue;
+            PlayerStats.score += scoreValue;
         }
 
         Destroy(this.gameObject);

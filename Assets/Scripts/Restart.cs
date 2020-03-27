@@ -9,6 +9,7 @@ public class Restart : MonoBehaviour
     {
         if(coll.gameObject.tag == "Player")
         {
+            PlayerPrefs.SetInt("Score", PlayerStats.score);
             Debug.Log("You made it");
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
