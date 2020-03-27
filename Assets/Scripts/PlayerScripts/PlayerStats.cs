@@ -39,7 +39,8 @@ public class PlayerStats : MonoBehaviour
     {
         //insntantiate a fancy particle system please
         //maybe add a small delay so we can see it as well
-        PlayerPrefs.SetInt("Score", score);
+        PlayerStats.score = 0;
+        PlayerPrefs.SetInt("Score", 0);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //Debug.Log("I died not clickbait");
     }
