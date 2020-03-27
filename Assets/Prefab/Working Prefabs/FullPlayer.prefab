@@ -432,9 +432,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8914b0531197e294c8798b1347263ebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreInt: 0
   scoreText: {fileID: 4315819037192161587}
-  playerStats: {fileID: 7562373713143692232}
 --- !u!114 &5693468643899565788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -573,7 +571,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 0
   maxHealth: 5
-  score: 0
   healthBar: {fileID: 2176095347292417843}
 --- !u!1 &8928099300236154631
 GameObject:
@@ -726,15 +723,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2377457856233581592, guid: 5aef4d556c066a04f90712f2482f52e6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 28.827026
-      objectReference: {fileID: 0}
     - target: {fileID: 2377457855963991368, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -28.827026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377457856233581592, guid: 5aef4d556c066a04f90712f2482f52e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 28.827026
       objectReference: {fileID: 0}
     - target: {fileID: 2377457855963991375, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
