@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class PlayerStats : MonoBehaviour
 {
-    public int health;
-    [SerializeField] private int maxHealth = 5;
+    public float health;
+    [SerializeField] private float maxHealth = 5f;
     public int score;
+
+    public Image healthBar;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,7 +25,6 @@ public class PlayerStats : MonoBehaviour
         {
             Die();
         }
-
         Debug.Log("Current health: " + health);
         Debug.Log("Current score: " + score);
     }
@@ -29,6 +32,7 @@ public class PlayerStats : MonoBehaviour
     public void TakeDamage(int damage)
     {
         health -= damage;
+        healthBar.fillAmount = health / 5;
     }
 
     void Die()
