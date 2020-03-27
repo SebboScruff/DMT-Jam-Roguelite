@@ -7,7 +7,7 @@ public class PlayerStats : MonoBehaviour
 {
     public float health;
     [SerializeField] private float maxHealth = 5f;
-    public int score;
+    static public int score;
 
     public Image healthBar;
 
@@ -39,7 +39,7 @@ public class PlayerStats : MonoBehaviour
     {
         //insntantiate a fancy particle system please
         //maybe add a small delay so we can see it as well
-
+        PlayerPrefs.SetInt("Score", score);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         //Debug.Log("I died not clickbait");
     }
