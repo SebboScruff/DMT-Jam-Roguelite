@@ -215,6 +215,7 @@ MonoBehaviour:
   bulletSpeed: 6
   pauseManager: {fileID: 3883400106400586283}
   distance: 10
+  crosshairs: {fileID: 2800000, guid: 58dd89386bd8f12489868b4815c298c5, type: 3}
 --- !u!1 &2170654634977634417
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,15 +577,15 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2377457855963991368, guid: 5aef4d556c066a04f90712f2482f52e6,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -28.827026
-      objectReference: {fileID: 0}
     - target: {fileID: 2377457856233581592, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 28.827026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2377457855963991368, guid: 5aef4d556c066a04f90712f2482f52e6,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -28.827026
       objectReference: {fileID: 0}
     - target: {fileID: 2377457855963991375, guid: 5aef4d556c066a04f90712f2482f52e6,
         type: 3}
