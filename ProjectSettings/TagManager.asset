@@ -9,6 +9,7 @@ TagManager:
   - Music
   - Turret
   - Currency
+  - explodable
   layers:
   - Default
   - TransparentFX
